@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  font-family: "Inter Tight", sans-serif !important;
+}
+
+body {
+  /* min-height: 100svh; */
+  /* background-image: radial-gradient(
+    circle at center,
+    hsl(0, 0%, 100%) 0%,
+    hsl(0, 0%, 95%) 100%
+  ); */
+}
