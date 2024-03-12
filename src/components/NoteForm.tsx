@@ -20,11 +20,13 @@ function NoteForm({
   const markdownRef = useRef<HTMLTextAreaElement>(null);
   const [selectedTags, setSelectedTags] = useState<Tag[]>(() => tags);
   const navigate = useNavigate();
-  const [value, setValue] = useState(markdown);
+  const [value, setValue] = useState<string | undefined>(markdown);
 
   //does: handle the form submit
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
+
+    if (value === undefined || value === "" || value == null) return alert("Please enter your notes!")
 
     onSubmit({
       title: titleRef.current!.value,
